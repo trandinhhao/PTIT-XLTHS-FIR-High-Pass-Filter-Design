@@ -1,28 +1,32 @@
-fprintf('Thiết kế bộ lọc thông cao dùng phương pháp bình phương tối thiểu \n');
-fprintf('Nhập thông số bộ lọc \n');
-fs = input('Tần số lấy mẫu: ');
-t_start = input('Thời gian bắt đầu: ');
-t_end = input('Thời gian kết thúc: ');
+fprintf('Design a high-pass filter using the least squares method \n');
+fprintf('Enter filter parameters \n');
+fs = input('Sampling frequency: ');
+t_start = input('Start time: ');
+t_end = input('End time: ');
 t = t_start:1/fs:t_end;
-f = input('Tần số của tín hiệu sin: ');
-x = sin(2*pi*f*t) + 0.5*randn(size(t)); % Tín hiệu sin với nhiễu
-num_taps = input('Độ dài của bộ lọc FIR/số lượng mẫu của hồi đáp FIR: ');
-cutoff = input('Tần số cắt: ');
-% Tạo vector của tần số đáp ứng mong muốn
+f = input('Signal frequency: ');
+x = sin(2*pi*f*t) + 0.5*randn(size(t)); % Sinusoidal signal with noise
+num_taps = input('FIR filter length/number of FIR response samples: ');
+cutoff = input('Cutoff frequency: ');
+
+% Create the desired frequency response vector
 freq = [0, cutoff, cutoff*1.5, 1];
 amp = [1, 1, 0, 0];
 b = firls(num_taps, freq, amp);
-% Áp dụng bộ lọc FIR cho tín hiệu đầu vào
-y = filter(b, 1, x); % Áp dụng bộ lọc FIR
-% Vẽ biểu đồ so sánh tín hiệu đầu vào và đầu ra
+
+% Apply the FIR filter to the input signal
+y = filter(b, 1, x); % Apply the FIR filter
+
+% Plot a comparison between the input and filtered signals
 figure;
 subplot(2, 1, 1);
 plot(t, x);
-title('Tín hiệu đầu vào');
-xlabel('Thời gian');
+title('Input Signal');
+xlabel('Time');
 ylabel('Amplitude');
+
 subplot(2, 1, 2);
 plot(t, y);
-title('Tín hiệu đầu ra sau khi lọc');
-xlabel('Thời gian');
+title('Output Signal after Filtering');
+xlabel('Time');
 ylabel('Amplitude');
