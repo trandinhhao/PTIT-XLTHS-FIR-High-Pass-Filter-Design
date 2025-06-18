@@ -1,4 +1,4 @@
-# Thiết Kế Bộ Lọc FIR Thông Cao (FIR High-Pass Filter Design)
+# 📶 Thiết Kế Bộ Lọc FIR Thông Cao
 
 Bài tập lớn môn **Xử Lý Tín Hiệu Số (XLTHS)** tại Học viện Công nghệ Bưu chính Viễn thông - PTIT  
 **Sinh viên**: Trần Đình Hào - B22DCCN278  
