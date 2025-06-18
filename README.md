@@ -68,7 +68,3 @@ Bộ lọc FIR (Finite Impulse Response) là một công cụ quan trọng trong
 - Có độ trễ (latency)
 - Tốn tài nguyên tính toán
 - Không linh hoạt khi cần thay đổi tần số cắt
-
-## 📜 License
-
-Dự án phục vụ mục đích học thuật, không có license nguồn mở.
