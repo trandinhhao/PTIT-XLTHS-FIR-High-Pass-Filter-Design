@@ -5,6 +5,8 @@ Bài tập lớn môn **Xử Lý Tín Hiệu Số (XLTHS)** tại Học viện C
 **Giảng viên**: Trần Tuấn Anh | **Khóa**: D22  
 📄 **Báo cáo**: [PDF](https://drive.google.com/file/d/1170IfuuoFC38nKKBDqPhG7qNUXjvv4ks/view?usp=sharing) | [DOCX](https://docs.google.com/document/d/14DLy4H8t95rMflHzGPpXQh_yq0Shodpg/edit?usp=sharing&ouid=113235621676813436249&rtpof=true&sd=true)
 
+(Cho tôi 1 ⭐ nếu nó hữu ích cho bạn nhé, làm cực lắm đó 😅)
+
 ---
 
 ## 📝 Giới thiệu
@@ -29,7 +31,6 @@ Bộ lọc FIR (Finite Impulse Response) là một công cụ quan trọng trong
 
 - MATLAB (Live Script Editor)
 - Các hàm MATLAB: `fir1`, `freqz`, `lsfir`
-- Nền tảng chạy code mẫu: [Ideone](https://ideone.com)
 
 ## ⚙️ Nội dung thực hiện
 
